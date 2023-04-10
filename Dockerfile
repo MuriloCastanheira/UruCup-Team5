@@ -58,7 +58,7 @@ RUN cd ssl_ws/grSim && \
 COPY /src /ssl_ws/src/data
 
 # Build the workspace
-RUN source opt/ros/noetic/setup.bash && cd /ssl_ws && catkin_make
+RUN source opt/ros/noetic/setup.bash && cd /ssl_ws && catkin_make && catkin_make && catkin_make && catkin_make && catkin_make && catkin_make && catkin_make && catkin_make
 
 # Install python dependencies of grsim_ros_bridge package
 RUN pip install /ssl_ws/src/grsim_ros_bridge/ssl-python-clients
